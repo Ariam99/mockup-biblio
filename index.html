@@ -1,21 +1,15 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" ng-app="biblioApp">
 <head>
-	
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<title>Biblioteca</title>
 	<link rel="stylesheet" href="css/core.css" type="text/css" />
-	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/ngDialog.css" type="text/css" />
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
-	
-		
 </head>
-
 <body>
-
 	<header></header>
 	<!--<nav class="main-menu"></nav>-->
 	<nav class="submenu">
@@ -24,12 +18,11 @@
 			<div class="submenu-selector-right">author</div>
 		</div>
 	</nav>
-	<div class="main-container">
-	
+	<div class="main-container" ng-controller="MainCtrl">
 		<div class="book-list-container">
 			<ul>
 				<li>
-					<a href="http://">
+					<a ng-click="clickToOpen()">
 						<div class="book-list-image-container"><img src="images/51fNLBMXlEL.jpg" alt="" /></div>
 						<div class="book-list-info">
 							<h3>Designing Brand Identity: An Essential</h3>
@@ -167,9 +160,13 @@
 			</ul>
 		</div>
 	</div>
-	
-	
-	
-
+	<script type="text/javascript" src="scripts/angular.min.js"></script>
+	<script type="text/javascript" src="scripts/ngDialog.min.js"></script>
+	<script type="text/javascript" src="scripts/controllers.js"></script>
+	<script type="text/ng-template" id="popupTmpl">
+		<div id="target">
+          Click here
+        </div>
+	</script>
 </body>
 </html>
