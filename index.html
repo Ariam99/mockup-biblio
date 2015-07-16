@@ -31,7 +31,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="http://">
+					<a ng-click="clickToOpen()">
 						<div class="book-list-image-container"><img src="images/title_page.png" alt="" /></div>
 						<div class="book-list-info">
 							<h3>Raspberry Pi User Guide</h3>
@@ -165,7 +165,29 @@
 	<script type="text/javascript" src="scripts/controllers.js"></script>
 	<script type="text/ng-template" id="popupTmpl">
 		<div id="target">
-          Click here
+          <div class="ngDialog-container">
+          	<div class="ngDialog-close"></div>
+          	<div class="ngDialog-image-container">
+          		<img src="images/tothepoint.jpg" alt="" />
+          	</div>
+          	<div class="ngDialog-book-info">
+          		<h2>You Can Draw in 30 Days: The Fun, Easy Way to Learn to Draw in One Month or Less</h2>
+          		<p class="ngDialog-book-info-author">Foreman, John W.</p>
+          		<p class="ngDialog-book-info-date">JUNE 22, 2015</p>
+          		<p class="ngDialog-book-info-isbn"><strong>ISBN-13: </strong>978-1118794388
+          		<br />
+          		<strong>ISBN-10: </strong>111866146X</p>          		
+          	</div>
+          	<p class="ngDialog-book-description">
+          				Data Science gets thrown around in the press like it's magic. Major retailers are predicting everything from when their customers are pregnant to when they want a new pair of Chuck Taylors. It's a brave new world where seemingly meaningless data can be transformed into valuable insight to drive smart business decisions.
+          				
+          				But how does one exactly do data science? Do you have to hire one of these priests of the dark arts, the "data scientist," to extract this gold from your data? Nope.
+          				
+          				Data science is little more than using straight-forward steps to process raw data into actionable insight. And in Data Smart, author and data scientist John Foreman will show you how that's done within the familiar environment of a spreadsheet.
+          				</p>
+          	
+          	          	
+          </div>
         </div>
 	</script>
 </body>
