@@ -164,18 +164,18 @@ header{
 	padding: 36px;
 }
 .ngdialog-content .ngDialog-close{
-	background-color: #ee1dd1;
-	width: 36px;
-	height: 36px;
+	background: url("../images/close.svg") no-repeat;
+	background-size: cover;
+	width: 32px;
+	height: 32px;
 	position: static;
 	float: right;
-	margin-top: -50px;
-	margin-right: -50px;
-	background: url(../images/close.svg);
-	background-size: 36px;
+	margin-top: -52px;
+	margin-right: -52px;
+	display:inline-block;
 }
 .ngdialog-content .ngDialog-close:hover{
-	background: url(../images/close-hover.svg);
+	background-position-y: -32px;
 	cursor: pointer;
 }
 .ngDialog-container{
@@ -184,6 +184,7 @@ header{
 .ngDialog-image-container{
 	float: left;
 	margin-right: 28px;
+	
 }
 .ngDialog-image-container img{
 	width: 160px;
@@ -214,6 +215,7 @@ header{
 }
 .ngDialog-book-description{
 	font-size: 15px;
+	font-weight: 400;
 	color: #4d4d4d;
 	box-sizing: border-box;
 	display: table;

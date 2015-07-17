@@ -79,12 +79,14 @@
   -webkit-backface-visibility: hidden;
   -webkit-animation: ngdialog-fadein 0.5s;
   animation: ngdialog-fadein 0.5s;
+	z-index: -10;
 }
 
 .ngdialog.ngdialog-closing .ngdialog-overlay {
   -webkit-backface-visibility: hidden;
   -webkit-animation: ngdialog-fadeout 0.5s;
   animation: ngdialog-fadeout 0.5s;
+	z-index: 0;
 }
 
 .ngdialog-content {
@@ -92,6 +94,7 @@
   -webkit-backface-visibility: hidden;
   -webkit-animation: ngdialog-fadein 0.5s;
   animation: ngdialog-fadein 0.5s;
+	z-index: 9999;
 }
 
 .ngdialog.ngdialog-closing .ngdialog-content {
