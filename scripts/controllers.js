@@ -5,7 +5,8 @@ biblioApp.controller('MainCtrl', function($scope, ngDialog) {
 	$scope.clickToOpen = function () {
 		ngDialog.open({ 
 			template: 'popupTmpl',
-			showClose: false
+			showClose: false,
+			closeByDocument: true
 		});
 	};
 });
