@@ -157,12 +157,12 @@ header{
 
 /*BOOK LIST DIALOG-------------------------------------------------------------------------*/
 .ngdialog-content{
-	width: 50%;
-	margin: 40px auto;
+	margin: 72px auto;
 	border-radius: 4px;
 	box-sizing: border-box;
 	padding: 36px;
 	display: table;
+	width: 600px;
 }
 .ngdialog-content .ngDialog-close{
 	background: url("../images/close.svg") no-repeat;
@@ -224,7 +224,6 @@ header{
 	border-top: 1px solid #e0e0e0;
 	margin-top: 28px;
 	padding-top: 28px;
-	padding-bottom: 28px;
 }
 /*TRANSITIONS-------------------------------------------------------------------------*/
 .book-list-container ul li a, .book-list-container ul li a:hover, .book-list-info h3, .book-list-info p, .book-list-container ul li a:hover p, .book-list-container ul li a:hover h3, .book-list-container ul li a img, .book-list-container ul li a:hover img{
