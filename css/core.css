@@ -162,6 +162,7 @@ header{
 	border-radius: 4px;
 	box-sizing: border-box;
 	padding: 36px;
+	display: table;
 }
 .ngdialog-content .ngDialog-close{
 	background: url("../images/close.svg") no-repeat;
